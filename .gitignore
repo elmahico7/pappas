@@ -1,0 +1,18 @@
+
+# VAGRANT
+.wp-content/themes/webpack-gulp-wordpress-starter-theme/vagrant/
+
+# IDE
+wp-content/themes/webpack-gulp-wordpress-starter-theme/nbproject/
+.wp-content/themes/webpack-gulp-wordpress-starter-theme/idea/*
+
+# Composer
+composer.phar
+wp-content/themes/webpack-gulp-wordpress-starter-theme/vendor/
+
+# Project
+.wp-content/themes/webpack-gulp-wordpress-starter-theme/sass-cache
+wp-content/themes/webpack-gulp-wordpress-starter-theme/assets/dist/
+wp-content/themes/webpack-gulp-wordpress-starter-theme/bower_components/
+wp-content/themes/webpack-gulp-wordpress-starter-theme/node_modules/
+

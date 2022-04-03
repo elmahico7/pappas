@@ -1,0 +1,49 @@
+
+// abstracts
+@import "abstracts/variables";
+
+// vendors
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/normalize.css/normalize";
+@import "node_modules/plyr/src/sass/plyr";
+// @import "node_modules/swiper/swiper";
+// vendors overrides
+@import "vendors/swipper";
+
+// base
+@import "base/fonts",
+        "base/base";
+
+// layout
+@import "layout/header",
+        "layout/footer",
+        "layout/forms",
+        "layout/grid";
+
+// components
+@import "components/buttons",
+        "components/modal",
+        "components/post-grid",
+        "components/scroll-text",
+        "components/scroll-text-footer",
+        "components/main-content",
+        "components/footer-content",
+        "components/sound";
+
+// pages
+@import "pages/front-page",
+        "pages/page",
+        "pages/single";
+
+// elements
+@import "elements/header/site-header";
+@import "elements/homepage/monokatoikies";
+@import "elements/homepage/services";
+@import "elements/homepage/categories";
+@import "elements/footer/site-footer";
+// @import "../../node-modules/swiper/css/bundle";
+@import "site";
+
+
+
+
