@@ -1,0 +1,93 @@
+.single {
+    &__title {
+        font-size: 28px;
+        color: #000;
+        font-weight: 700;
+        font-family: 'AvertaSemiBold';
+        margin: 50px 0 10px 0;
+        line-height: 32px;
+    }
+    &__location {
+        font-family: 'Averta';
+        font-size: 18px;
+        color: #04a7b7;
+    }
+    &__info {
+        background-color: #f8f8fa;
+        padding: 30px;
+        margin-top: 25px;
+        @include bp($bootstrap_lg) {
+            margin-top: unset;
+        }
+        > * {
+            font-weight: 700;
+            span {
+                font-weight: 300;
+            }
+        }
+        &__call {
+            background: rgba(254, 144, 10, 0.3);
+            padding: 15px 25px;
+            text-align: center;
+            margin: 30px auto 0;
+            width: 50%;
+            transition: .4s ease;
+            border: thin solid #fe900a;
+            color: #fe900a;;
+            @include bp($bootstrap_lg) {
+                margin: 100px auto 0;
+            }
+            cursor: pointer;
+            &:hover {
+                background: rgba(251, 102, 0, 0.8);
+                color: #fff;
+                svg {
+                    path {
+                        fill: #fff;
+                    }
+                }
+            }
+            svg {
+                margin-right: 10px;
+                path {
+                    transition: .4s ease;
+                    fill:  #fe900a;
+                }
+            }
+        }
+    }
+    &__features {
+        margin-top: 50px;
+        font-weight: 300;
+        span {
+            font-weight: 700;
+        }
+        > * {
+            padding: 10px 0;
+        }
+    }
+    &__description {
+        margin-top: 50px;
+        &__title {
+            font-family: 'AvertaSemiBold';
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        &__textarea {
+            font-weight: 300;
+            font-size: 16px;
+        }
+    }
+    &__map {
+        margin-top: 50px;
+    }
+    &__interested {
+        margin-top: 50px;
+        font-size: 24px;
+        font-weight: 700;
+        font-family: 'AvertaSemiBold';
+        margin-top: 50px;
+        text-align: center;
+    }
+}

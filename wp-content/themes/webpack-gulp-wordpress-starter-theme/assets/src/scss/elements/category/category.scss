@@ -1,0 +1,91 @@
+.category {
+    &__product__container {
+        &__outer__result {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__result {
+            font-size: 22px;
+            font-weight: 700;
+            font-family: 'AvertaSemiBold';
+        }
+        &__item {
+            margin-top: 50px;
+            display: flex;
+            background: #fff;
+            flex-direction: column;
+            @include bp($bootstrap_lg) {
+                flex-direction: row;
+            }
+            &__image {
+                img {
+                    max-width: 250px;
+                    height: auto;
+                    @include bp($bootstrap_md) {
+                        max-width: 350px;
+                    }
+                    @include bp($b_large) {
+                        max-width: 400px;
+                    }
+                }
+            }
+            &__info {
+                &__outer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 15px 0;
+                }
+                &__title {
+                    font-size: 20px;
+                }
+                &__price {
+                    font-family: 'AvertaSemiBold';
+                    font-weight: 700;
+                    font-size: 22px;
+                    margin-right: 10px;
+                }
+                &__subtitle {
+                    font-family: 'AvertaSemiBold';
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+                &__description {
+                    margin-top: 15px;
+                }
+                &__code {
+                    margin-top: 25px;
+                    span {
+                        font-weight: 700;
+                    }
+                }
+                &__more {
+                    margin-top: 15px;
+                    button {
+                        padding: 5px 20px;
+                    }
+                }
+            }
+            &__features {
+                background: #EDEDED;
+                padding: 20px 15px;
+                line-height: 25px;
+            }
+        }
+        
+    }
+    &__filters {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        padding: 5px 25px;
+        margin-bottom: 50px;
+    }
+
+}
+
+
+
+
+    

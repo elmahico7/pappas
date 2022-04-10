@@ -15,4 +15,5 @@ wp-content/themes/webpack-gulp-wordpress-starter-theme/vendor/
 wp-content/themes/webpack-gulp-wordpress-starter-theme/assets/dist/
 wp-content/themes/webpack-gulp-wordpress-starter-theme/bower_components/
 wp-content/themes/webpack-gulp-wordpress-starter-theme/node_modules/
+wp-content/uploads
 

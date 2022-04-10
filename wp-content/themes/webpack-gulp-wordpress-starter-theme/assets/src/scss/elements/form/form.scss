@@ -1,0 +1,79 @@
+.contact-form {
+    position: relative;
+	width: 100%;
+	padding: 50px;
+    
+    &__item {
+        position: relative;
+		width: 100%;
+		margin: 0 auto 20px;
+    }
+
+    input, textarea, select {
+        border: 1px solid #ccc;
+        background-color: #fff;
+        padding: 5px;
+        font-size: 20px;
+        width: 100%;
+        outline: none;
+
+        &:-webkit-autofill {
+            background-color: transparent !important;
+            -webkit-box-shadow: 0 0 0 30px #ffffff inset;
+        }
+
+        &:focus {
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                opacity: 0;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+                opacity: 0;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+                opacity: 0;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+                opacity: 0;
+            }
+        }
+
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 15px;
+            opacity: 1;
+            transition: opacity .4s ease;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+            font-size: 15px;
+            opacity: 1;
+            transition: opacity .4s ease;
+        }
+        &:-ms-input-placeholder { /* IE 10+ */
+            font-size: 15px;
+            opacity: 1;
+            transition: opacity .4s ease;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+            font-size: 15px;
+            opacity: 1;
+            transition: opacity .4s ease;
+        }
+    }
+
+    input[type="submit"] {
+        font-size: 13px;
+        line-height: 1;
+        font-weight: 700;
+        border: none;
+        color: #fff;
+        background: #fe900a;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+        width: 100%;
+        text-align: center;
+        padding-top: 13px !important;
+        padding-bottom: 13px !important;
+        border-radius: 5px !important;
+        margin-top: 35px;
+    }
+
+}

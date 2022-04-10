@@ -1,0 +1,12 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="16px" height="16px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<g>
+	<g>
+		<text transform="matrix(1 0 0 1 35.1494 14.4478)" fill="#393938" font-family="'TriviaHumanist-Italic'" font-size="16" letter-spacing="1"></text>
+	</g>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#393938" d="M14.666,12c-1.335,1.334-1.335,2.667-2.664,2.667
+		c-1.335,0-2.669-1.333-4.004-2.667c-1.329-1.332-2.664-2.667-2.664-3.999c0-1.334,1.335-1.334,2.664-2.667C9.333,4,5.334,0,3.999,0
+		C2.666,0,0,4,0,4c0,2.667,2.742,8.074,5.334,10.667C7.924,17.26,13.331,20,16.001,20c0,0,3.999-2.668,3.999-4
+		C20,14.667,16.001,10.668,14.666,12"/>
+</g>
+</svg>

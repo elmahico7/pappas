@@ -1,0 +1,1 @@
+cd wp-content/themes/webpack-gulp-wordpress-starter-theme
