@@ -5,29 +5,26 @@ import ScrollMagic from 'scrollmagic';
 const controller = new ScrollMagic.Controller();
 import Plyr from 'plyr';
 import debounce from 'Lodash';
+import './scripts/site-menu';
+import './scripts/swiper';
+import './scripts/image-animation';
 // import lazyload from 'lazyload';
-
 // console.log(lazyload());
 
-
 const App = {
-
 	/**
 	 * App.init
 	 */
 	init() {
-
 		// General scripts
 		function initGeneral() {
 			return new General();
 		}
 		initGeneral();
 	}
-
 };
 
 function singlePostHeight() {
-
 	const $singlePosImage = $('.single-content__image > img');
 	if ($singlePosImage.length > 0) {
 
@@ -55,47 +52,47 @@ function detectScroll() {
 	});
 }
 
-function imageAnimations() {
+// function imageAnimations() {
 
-	let $imageAnimation = $('[data-image-animation]');
-	if ($imageAnimation.length > 0) {
-		$imageAnimation.each((i, item) => {
-			const scene = new ScrollMagic.Scene({
-					triggerElement: item,
-					offset: 0,
-					reverse: true,
-					triggerHook: 0.3,
-				})
+// 	let $imageAnimation = $('[data-image-animation]');
+// 	if ($imageAnimation.length > 0) {
+// 		$imageAnimation.each((i, item) => {
+// 			const scene = new ScrollMagic.Scene({
+// 					triggerElement: item,
+// 					offset: 0,
+// 					reverse: true,
+// 					triggerHook: 0.3,
+// 				})
 			
-				.on('enter', () => {
-					$(item).addClass('is-visible');
-					if(detectScroll() < 0){
-					}
-					else{
-						$(item).prev().removeClass('is-visible');
-						console.log('scroll down ? ? ?');
-					}
-				})
-				.on('leave', () => {
-					$(item).removeClass('is-visible');
-					if(detectScroll() < 0){
-						// console.log('scroll down on leave? ? ?');
-					}
-					else{
-						// console.log('scroll up on leave ? ? ?');
-						$(item).prev().addClass('is-visible');
-					}
+// 				.on('enter', () => {
+// 					$(item).addClass('is-visible');
+// 					if(detectScroll() < 0){
+// 					}
+// 					else{
+// 						$(item).prev().removeClass('is-visible');
+// 						console.log('scroll down ? ? ?');
+// 					}
+// 				})
+// 				.on('leave', () => {
+// 					$(item).removeClass('is-visible');
+// 					if(detectScroll() < 0){
+// 						// console.log('scroll down on leave? ? ?');
+// 					}
+// 					else{
+// 						// console.log('scroll up on leave ? ? ?');
+// 						$(item).prev().addClass('is-visible');
+// 					}
 
-				})
-				.addTo(controller);
-			$(window).on('resize', () => {
-				controller.updateScene(scene, true);
-			});
+// 				})
+// 				.addTo(controller);
+// 			$(window).on('resize', () => {
+// 				controller.updateScene(scene, true);
+// 			});
 
-		});
-	}
+// 		});
+// 	}
 
-}
+// }
 
 function animateonClick() {
 	let $clickelem = $('.single-gallery__image__caption.is-visible');
@@ -107,11 +104,8 @@ function animateonClick() {
 	});
 }
 
-
 function mainContentAnimations() {
-
 	let $contentAnimation = $('[data-content-animation]');
-
 	if ($contentAnimation.length > 0) {
 		console.log('content found');
 		if (window.innerWidth > 600) {
@@ -170,7 +164,6 @@ function alterSinglePostLanguage(){
 	const $languageGr = $('.gr');
 	const $greekcontent = $('.single-content__content__text--gr');
 	const $englishcontent = $('.single-content__content__text--en');
-
 	const $titleen = $('.titleen');
 	const $titlegr = $('.titlegr');
 	if($languageEn.length > 0){
@@ -198,40 +191,27 @@ function alterSinglePostLanguage(){
 	}
 }
 
-
 document.addEventListener('DOMContentLoaded', () => {
 	App.init();
 	initPlyr(); // Init the videos
-
-
 	let soundUrl = $('.myaudio').data('src');
 	let myAudio = new Audio(soundUrl);
 	myAudio.loop = true;
-
 	singlePostHeight();
-	imageAnimations();
+	// imageAnimations();
 	playSoundInit(myAudio);
 	closeSoundInit(myAudio);
 	alterSinglePostLanguage();
-
-
 	window.addEventListener('resize', function (event) {
 		singlePostHeight();
 	}, true);
-
 });
-
 
 $(document).on('ready', () => {
 	let $audioUrl = $('.myaudio').data('src');
 	let myAudio = new Audio($audioUrl);
-
 });
-
 
 window.addEventListener('load', (event) => {
 	mainContentAnimations();
 });
-
-import './scripts/site-menu';
-import './scripts/swiper';

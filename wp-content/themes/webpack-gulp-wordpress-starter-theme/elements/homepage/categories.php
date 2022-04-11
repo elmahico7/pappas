@@ -10,8 +10,8 @@ $categories = get_field('categories');
             ?>
                 <div class="col-12 col-md-6 col-lg-4 pd10">
                     <div class="categories">
-                        <div class="categories__image">
-                            <img src="<?php echo $image; ?>" alt="category__image" />
+                        <div class="categories__image" data-image-animation>
+                            <img src="<?php echo $image; ?>" alt="category__image"/>
                         </div>
                         <div class="categories__title">
                             <?php echo $title; ?>

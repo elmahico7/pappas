@@ -13,9 +13,9 @@
 
 <?php get_template_part('elements/swiper'); ?>
 
-<?php get_template_part('elements/homepage/categories'); ?>
-
 <?php get_template_part('elements/homepage/services'); ?>
+
+<?php get_template_part('elements/homepage/categories'); ?>
 
 <?php get_template_part('elements/homepage/monokatoikies'); ?>
 
@@ -23,8 +23,6 @@
 
 <?php // get_template_part('partials/post-grid'); ?>
 
-
 <?php // get_template_part('partials/main-content'); ?>
-
 
 <?php get_footer();
