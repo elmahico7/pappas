@@ -9,7 +9,6 @@ import './scripts/site-menu';
 import './scripts/swiper';
 import './scripts/image-animation';
 // import lazyload from 'lazyload';
-// console.log(lazyload());
 
 const App = {
 	/**
@@ -51,48 +50,6 @@ function detectScroll() {
 		lastScrollTop = st;
 	});
 }
-
-// function imageAnimations() {
-
-// 	let $imageAnimation = $('[data-image-animation]');
-// 	if ($imageAnimation.length > 0) {
-// 		$imageAnimation.each((i, item) => {
-// 			const scene = new ScrollMagic.Scene({
-// 					triggerElement: item,
-// 					offset: 0,
-// 					reverse: true,
-// 					triggerHook: 0.3,
-// 				})
-			
-// 				.on('enter', () => {
-// 					$(item).addClass('is-visible');
-// 					if(detectScroll() < 0){
-// 					}
-// 					else{
-// 						$(item).prev().removeClass('is-visible');
-// 						console.log('scroll down ? ? ?');
-// 					}
-// 				})
-// 				.on('leave', () => {
-// 					$(item).removeClass('is-visible');
-// 					if(detectScroll() < 0){
-// 						// console.log('scroll down on leave? ? ?');
-// 					}
-// 					else{
-// 						// console.log('scroll up on leave ? ? ?');
-// 						$(item).prev().addClass('is-visible');
-// 					}
-
-// 				})
-// 				.addTo(controller);
-// 			$(window).on('resize', () => {
-// 				controller.updateScene(scene, true);
-// 			});
-
-// 		});
-// 	}
-
-// }
 
 function animateonClick() {
 	let $clickelem = $('.single-gallery__image__caption.is-visible');
@@ -198,7 +155,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	let myAudio = new Audio(soundUrl);
 	myAudio.loop = true;
 	singlePostHeight();
-	// imageAnimations();
 	playSoundInit(myAudio);
 	closeSoundInit(myAudio);
 	alterSinglePostLanguage();

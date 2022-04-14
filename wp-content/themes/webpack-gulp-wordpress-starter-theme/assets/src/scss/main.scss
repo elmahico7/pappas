@@ -6,7 +6,6 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/normalize.css/normalize";
 @import "node_modules/plyr/src/sass/plyr";
-// @import "node_modules/swiper/swiper";
 // vendors overrides
 @import "vendors/swipper";
 
@@ -44,7 +43,7 @@
 @import "elements/single/single";
 @import "elements/form/form";
 @import "elements/category/category";
-// @import "../../node-modules/swiper/css/bundle";
+@import "elements/swiper";
 @import "site";
 
 

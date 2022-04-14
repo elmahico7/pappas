@@ -1,35 +1,40 @@
 /* eslint-disable */ 
-// import Swiper from 'swiper';
-// import 'swiper/css/bundle';
 import {
   Swiper,
   EffectCoverflow,
   Navigation,
-  Autoplay
+  Autoplay,
+  EffectFade,
 } from 'swiper';
-Swiper.use([Navigation, Autoplay, EffectCoverflow]);
+Swiper.use([Navigation, Autoplay, EffectCoverflow, EffectFade]);
 
 
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
   // direction: 'vertical',
   loop: true,
-  grubCursor: true,
-  speed: 800,
-
-
-  // If we need pagination
+  // grubCursor: true,
+  // speed: 5000,
+  // effect: 'fade',
+  // fadeEffect: {
+  //   crossFade: true
+  // },
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 30,
+    slideShadows: false,
+  },
+  autoplay: {
+    enabled: true,
+    delay: 5000,
+    disableOnInteraction: false
+  },
   // pagination: {
   //   el: '.swiper-pagination',
   // },
-
-  // // Navigation arrows
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // },
-
-  // // And if we need scrollbar
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   // scrollbar: {
   //   el: '.swiper-scrollbar',
   // },

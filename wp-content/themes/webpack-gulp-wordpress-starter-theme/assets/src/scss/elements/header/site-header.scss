@@ -10,6 +10,7 @@
     padding: 0 50px;
     @include bp($b_laptop) {
         justify-content: space-evenly;
+        background-color: rgba(125,125,125,.5);
     }
     &__menu {
         display: none;

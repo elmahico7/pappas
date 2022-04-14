@@ -1,0 +1,70 @@
+.swiper {
+    @include bp($b_laptop) {
+        top: -100px;
+    }
+    &-slide{
+		&__image {
+            height: 100%;
+            width: 100%;
+			overflow: hidden;
+            @include bp($b_desktop) {
+                height: 100vh;
+            }
+		}
+		&__title {
+			position: absolute;
+			width: 100%;
+			top: 5%;
+			left: 0;
+			padding: 30px;
+			text-align: center;
+            font-family: 'AvertaSemiBold';
+            font-size: 16px;
+            color: #fff;
+            @include bp($bootstrap_md) {
+                font-size: 20px;
+                top: 10%;
+            }
+            @include bp($b_laptop) {
+                top: 15%;
+            }
+            @include bp($b_desktop) {
+                font-size: 30px;
+                top: 20%;
+            }
+		}
+	}
+    &-button-next {
+        z-index: 1;
+        position: absolute;
+        right: 10%;
+        width: 35px;
+        top: 50%;
+        svg {
+            transform: rotate(180deg);
+            cursor: pointer;
+        }
+        @include bp($bootstrap_md) {
+            width: 50px;
+        }
+        @include bp($b_desktop) {
+            width: 80px;
+        }
+    }
+    &-button-prev {
+        z-index: 1;
+        position: absolute;
+        left: 10%;
+        width: 35px;
+        top: 50%;
+        svg {
+            cursor: pointer;
+        }
+        @include bp($bootstrap_md) {
+            width: 50px;
+        }
+        @include bp($b_desktop) {
+            width: 80px;
+        }
+    }
+}
