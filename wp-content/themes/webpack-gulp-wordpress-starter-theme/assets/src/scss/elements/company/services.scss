@@ -1,0 +1,58 @@
+.section-services {
+    background-color: #e4e3e6;
+    .services {
+        &.is-visible {
+            background: #ede8e2;
+            @include bp($bootstrap_lg) {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                align-items: center;
+                height: 90vh;
+                margin-left: unset;
+            }
+            .services-title {
+                padding-left: 30px;
+                grid-column: 1 / -1;
+                grid-row: 1;
+                font-size: 20px;
+                z-index: 2;
+                margin-bottom: 30px;
+                @include bp($bootstrap_lg) {
+                    font-size: 32px;
+                    margin-bottom: unset;
+                }
+                svg {
+                    width: 20px;
+                    margin-right: 10px;
+                    @include bp($bootstrap_lg) {
+                        width: 30px;
+                    }
+                }
+            }
+            .services__image {
+                grid-row: 1;
+                grid-column: 2;
+                animation: image-in 1s 1s backwards;
+                @keyframes image-in {
+                    from {
+                        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                    }
+                    to {
+                        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                    }
+                }
+            }
+            @keyframes outer-left {
+                from {
+                    transform: translateX(50%);
+                }
+                to {
+                    transform: none;
+                }
+            }
+            .services-title {
+                animation: outer-left 1s ease both;
+            }
+        }
+    }
+}

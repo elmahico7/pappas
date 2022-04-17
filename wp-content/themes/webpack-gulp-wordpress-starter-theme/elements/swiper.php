@@ -17,11 +17,13 @@ $slider = get_field('slider');
 				</div>
 			<?php endforeach; ?>
 		</div>
-		<div class="swiper-button-next">
-			<?php echo get_svg('Back-White-Arrow2'); ?>
-		</div>
-		<div class="swiper-button-prev">
-			<?php echo get_svg('Back-White-Arrow2'); ?>
-		</div>
+		<?php if (count($slider) > 1) : ?>
+			<div class="swiper-button-next">
+				<?php echo get_svg('Back-White-Arrow2'); ?>
+			</div>
+			<div class="swiper-button-prev">
+				<?php echo get_svg('Back-White-Arrow2'); ?>
+			</div>
+		<?php endif; ?>
 	</div>
 <?php endif; ?>

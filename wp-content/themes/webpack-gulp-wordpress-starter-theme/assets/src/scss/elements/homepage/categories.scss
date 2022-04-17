@@ -27,7 +27,7 @@
             height: 100%;
             background-color: #fff;
             bottom: 0;
-            transition: height 1s ease-in-out
+            transition: height 1s ease-in-out;
         }
         &.is-visible{
             &:before{

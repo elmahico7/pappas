@@ -11,8 +11,9 @@ Swiper.use([Navigation, Autoplay, EffectCoverflow, EffectFade]);
 
 const swiper = new Swiper('.swiper', {
   // direction: 'vertical',
-  loop: true,
+  loop: false,
   // grubCursor: true,
+  allowTouchMove: false,
   // speed: 5000,
   // effect: 'fade',
   // fadeEffect: {

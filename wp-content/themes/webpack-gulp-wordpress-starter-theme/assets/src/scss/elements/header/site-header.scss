@@ -2,6 +2,7 @@
     font-family: 'AvertaSemiBold';
     background-color: #fff;
     height: 100px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,6 +12,7 @@
     @include bp($b_laptop) {
         justify-content: space-evenly;
         background-color: rgba(125,125,125,.5);
+        position: absolute;
     }
     &__menu {
         display: none;
@@ -92,5 +94,11 @@
                 padding: 15px;
             }
         }
+    }
+}
+.page-template-category, .single {
+    .site-header {
+        position: relative;
+        background: none;
     }
 }

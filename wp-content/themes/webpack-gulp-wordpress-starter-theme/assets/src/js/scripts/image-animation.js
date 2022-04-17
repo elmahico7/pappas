@@ -4,7 +4,7 @@ import ScrollMagic from 'scrollmagic';
 const controller = new ScrollMagic.Controller();
 
 function imageAnimations() {
-	let $imageAnimation = $('[data-image-animation]');
+	let $imageAnimation = $('[data-image-animation], [data-service-animation], [data-text-animation]');
 	if ($imageAnimation.length > 0) {
 		$imageAnimation.each((i, item) => {
 			const scene = new ScrollMagic.Scene({

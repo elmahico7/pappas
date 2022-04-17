@@ -21,8 +21,4 @@
 
 <?php get_template_part('elements/homepage/ektaseis'); ?>
 
-<?php // get_template_part('partials/post-grid'); ?>
-
-<?php // get_template_part('partials/main-content'); ?>
-
 <?php get_footer();
