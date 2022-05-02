@@ -1,4 +1,6 @@
+@import 'mixins';
 .services {
+    opacity: 0;
     padding: 60px 0;
     &__title {
         font-family: 'Averta';
@@ -55,5 +57,8 @@
             text-align: center;
             margin-bottom: 30px;
         }
+    }
+    &.is-visible {
+        @include outer-down;
     }
 }

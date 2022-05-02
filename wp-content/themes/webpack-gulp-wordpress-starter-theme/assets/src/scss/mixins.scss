@@ -1,0 +1,63 @@
+@mixin outer-down {
+    @keyframes outer-down {
+        from {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+    animation: outer-down 1s ease both;
+}
+@mixin outer-down-1s {
+    @keyframes outer-down-1s {
+        from {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+    animation: outer-down 1s 1s ease both;
+}
+@mixin outer-right {
+    @keyframes outer-right {
+        from {
+            opacity: 0;
+            transform: translateX(50%);
+        }
+        to {
+            opacity: 1 !important;
+            transform: none;
+        }
+    }
+    animation: 1s outer-right ease both;
+}
+@mixin outer-right-2s {
+    @keyframes outer-right-2s {
+        from {
+            opacity: 0;
+            transform: translateX(50%);
+        }
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+    animation: 2s outer-right-2s ease-out;
+}
+@mixin image-reveal {
+    @keyframes image-reveal {
+        from {
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        }
+        to {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+    }
+    animation: image-reveal 1s 1s backwards;
+}

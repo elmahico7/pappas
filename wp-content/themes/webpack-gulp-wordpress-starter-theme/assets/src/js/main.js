@@ -7,7 +7,7 @@ import Plyr from 'plyr';
 import debounce from 'Lodash';
 import './scripts/site-menu';
 import './scripts/swiper';
-import './scripts/image-animation';
+import './scripts/animations';
 import './scripts/counter';
 // import lazyload from 'lazyload';
 

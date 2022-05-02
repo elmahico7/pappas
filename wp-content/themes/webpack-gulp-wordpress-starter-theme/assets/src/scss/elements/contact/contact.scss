@@ -1,3 +1,4 @@
+@import 'mixins';
 .contact {
     position: relative;
     &__image {
@@ -57,21 +58,7 @@
                 margin: 20px 0 20px;
             }
         }
-        &.is-visible {
-            @keyframes outer-down {
-                from {
-                    transform: translateY(100%);
-                    opacity: 0;
-                }
-                to {
-                    transform: none;
-                    opacity: 1;
-                }
-            }
-        }
-    }
-    .contact__info {
-        animation: outer-down 1s 1s ease both;
+        @include outer-down-1s;
     }
 }
 

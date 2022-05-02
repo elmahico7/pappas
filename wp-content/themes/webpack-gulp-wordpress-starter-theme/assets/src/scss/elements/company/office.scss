@@ -1,3 +1,4 @@
+@import 'mixins';
 .office {
     background-color: #e4e3e6;
     &__title {
@@ -22,19 +23,7 @@
             transition: width 1s ease-in-out;
         }
         &.is-visible {
-            @keyframes anim-lineUp {
-                from {
-                    opacity: 0;
-                    transform: translateX(50%);
-                }
-                to {
-                    opacity: 1;
-                    transform: none;
-                }
-            }
-            .lineUp {
-                animation: 2s anim-lineUp ease-out;
-            }
+            @include outer-right-2s;
             &:after {
                 width: 100%;
             }
@@ -52,9 +41,7 @@
             text-transform: uppercase;
         }
         &.is-visible {
-            .lineUp {
-                animation: 2s anim-lineUp ease-out;
-            }
+            @include outer-right-2s;
         }
     }
     &__numbers {

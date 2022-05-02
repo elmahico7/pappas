@@ -3,7 +3,7 @@ $title = get_field('title');
 $subtitle = get_field('subtitle');
 $services = get_field('services');
 ?>
-<section class="services">
+<section class="services" data-text-animation>
     <?php if ($title) : ?>
         <div class="container">
             <div class="row">

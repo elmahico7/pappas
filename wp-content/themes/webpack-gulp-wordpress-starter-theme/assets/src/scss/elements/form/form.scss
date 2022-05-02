@@ -82,3 +82,11 @@
         padding: 0;
     }
 }
+ .page-template-demand, .page-template-assign {
+     .contact-form {
+        padding: 0;
+        @include bp($b_desktop) {
+            width: 67%;
+        }
+    }
+ }

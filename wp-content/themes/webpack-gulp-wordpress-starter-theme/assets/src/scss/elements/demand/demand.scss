@@ -1,0 +1,23 @@
+@import 'mixins';
+.demand {
+    background: #f4f4f4;
+    &__info {
+        opacity: 0;
+        &.is-visible {
+            @include outer-down;
+        }
+    }
+    &__info-title {
+        font-size: 24px;
+        padding: 50px 0;
+    }
+    &__info-description {
+        font-size: 16px;
+        line-height: 30px;
+        padding-bottom: 50px;
+        @include bp($bootstrap_lg) {
+            width: 65%;
+        }
+    }
+
+}

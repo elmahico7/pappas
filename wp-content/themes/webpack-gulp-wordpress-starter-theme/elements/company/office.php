@@ -15,7 +15,7 @@ $circle3number = get_field('circle_3_number');
             <div class="row">
                 <div class="col-md-10">
                     <div class="office__title" data-text-animation>
-                        <div class="lineUp"><?php echo $title; ?></div>
+                        <?php echo $title; ?>
                     </div>
                 </div>
             </div>
@@ -23,10 +23,10 @@ $circle3number = get_field('circle_3_number');
                 <div class="col-md-6 offset-md-6">
                     <div class="office__text" data-text-animation>
                         <div class="office__text__subtitle">
-                            <div class="lineUp"><?php echo $subtitle; ?></div>
+                            <?php echo $subtitle; ?>
                         </div>
                         <div class="office__text__decription">
-                            <div class="lineUp"><?php echo $description; ?></div>
+                            <?php echo $description; ?>
                         </div>
                     </div>
                 </div>

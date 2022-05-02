@@ -1,3 +1,4 @@
+@import 'mixins';
 .monokatoikies {
     background: #f4f4f4;
     .category_title {
@@ -131,6 +132,15 @@
                 left: calc(var(--horizontal-offset) - var(--border-size));
                 right: calc(var(--horizontal-offset) - var(--border-size));
             }
+        }
+    }
+    &__inner {
+        opacity: 0;
+        transform: translateX(50%);
+        transition: 1s;
+        &.is-visible {
+            opacity: 1;
+            transform: none;
         }
     }
 }

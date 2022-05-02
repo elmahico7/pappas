@@ -1,6 +1,7 @@
-.section-services {
+@import 'mixins';
+.section-company-services {
     background-color: #e4e3e6;
-    .services {
+    .company-services {
         &.is-visible {
             background: #ede8e2;
             @include bp($bootstrap_lg) {
@@ -10,7 +11,7 @@
                 height: 90vh;
                 margin-left: unset;
             }
-            .services-title {
+            .company-services-title {
                 padding-left: 30px;
                 grid-column: 1 / -1;
                 grid-row: 1;
@@ -28,30 +29,12 @@
                         width: 30px;
                     }
                 }
+                @include outer-right;
             }
-            .services__image {
+            .company-services-image {
                 grid-row: 1;
                 grid-column: 2;
-                animation: image-in 1s 1s backwards;
-                @keyframes image-in {
-                    from {
-                        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-                    }
-                    to {
-                        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-                    }
-                }
-            }
-            @keyframes outer-left {
-                from {
-                    transform: translateX(50%);
-                }
-                to {
-                    transform: none;
-                }
-            }
-            .services-title {
-                animation: outer-left 1s ease both;
+                @include image-reveal;
             }
         }
     }
